@@ -10,8 +10,8 @@ from insightface.app import FaceAnalysis
 
 class FaceIdentification():
 
-    def __init__(self):
-        pass
+    def __init__(self, input_image):
+        self.image = input_image
 
 
     def load_model(self):
@@ -102,10 +102,10 @@ def main():
 
     image = cv2.imread("input/one_direction.jpg")
         
-    face_identification = FaceIdentification()
+    face_identification = FaceIdentification(image)
     face_identification.load_model()
     face_identification.face_bank()
-    face_identification.get_image(image)    
+    # face_identification.get_image(image)    
     face_identification.identification()
 
 
