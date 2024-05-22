@@ -20,11 +20,6 @@ class FaceIdentification():
 
     def get_image(self, input_image):
         self.image = input_image    
-    
-    
-
-    def update(self):
-        main()
 
 
     def identification(self):
@@ -102,24 +97,18 @@ class FaceIdentification():
         np.save("face_bank.npy", face_bank)
 
             
-
-
-
-if __name__ =="__main__":
-
-    # parser = ArgumentParser()
-    # parser.add_argument("--image",required=False, type = str, default = "input/one_direction.jpg")
-    # parser.add_argument("--update", type=str , action = argparse.BooleanOptionalAction)
-    # args = parser.parse_args()
+def main():
 
     image = cv2.imread("input/one_direction.jpg")
         
     face_identification = FaceIdentification.face_bank()
     face_identification.load_model()
-    face_identification.get_image(image)
-    
-
-    # if args.update:
-    #     face_identification.update()
-        
+    face_identification.get_image(image)    
     face_identification.identification()
+
+
+if __name__ =="__main__":
+    main()
+
+    
+    
