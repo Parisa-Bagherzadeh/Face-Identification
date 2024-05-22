@@ -7,10 +7,10 @@ def pre_install():
     return text
 
 setup(
-    name="sajjad",
+    name="face-identification",
     version="1.0.0", 
-    author="Sajjad", 
-    description="prints a cow",
+    author="Parisa Bagherzadeh", 
+    description="A package to identify faces on an image",
     long_description=pre_install(),
-    requires=[]
+    requires=['cv2, numpy, matplotlib, insightface']
 )
