@@ -101,8 +101,9 @@ def main():
 
     image = cv2.imread("input/one_direction.jpg")
         
-    face_identification = FaceIdentification.face_bank()
+    face_identification = FaceIdentification()
     face_identification.load_model()
+    face_identification.face_bank()
     face_identification.get_image(image)    
     face_identification.identification()
 
