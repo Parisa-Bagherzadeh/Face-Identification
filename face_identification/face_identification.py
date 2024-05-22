@@ -68,10 +68,11 @@ class FaceIdentification():
             
     def face_bank(self):
 
-        # app = FaceAnalysis(name = "buffalo_s", providers = ["CPUExecutionProvider"])
-        # app.prepare(ctx_id = 0, det_size = (640, 640))
-
         face_bank_path = './face_bank'
+
+        if not os.path.exists(face_bank_path):
+            os.makedirs(face_bank_path)
+        
 
         face_bank = []
 
