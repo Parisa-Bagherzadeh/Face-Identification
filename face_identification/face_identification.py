@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 import argparse
 from argparse import ArgumentParser
 from insightface.app import FaceAnalysis
-from create_face_bank import main
+
 
 
 class FaceIdentification():
