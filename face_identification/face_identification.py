@@ -18,8 +18,6 @@ class FaceIdentification():
         self.app = FaceAnalysis(name = "buffalo_s", providers = ["CPUExecutionProvider"])
         self.app.prepare(ctx_id = 0, det_size = (640, 640))
 
-    def get_image(self, input_image):
-        self.image = input_image    
 
 
     def identification(self):
@@ -100,13 +98,14 @@ class FaceIdentification():
             
 def main():
 
-    image = cv2.imread("input/one_direction.jpg")
+    image = "input/one_direction.jpg"
         
     face_identification = FaceIdentification(image)
     face_identification.load_model()
-    face_identification.face_bank()
-    # face_identification.get_image(image)    
+    face_identification.face_bank()  
     face_identification.identification()
+
+
 
 
 if __name__ =="__main__":
