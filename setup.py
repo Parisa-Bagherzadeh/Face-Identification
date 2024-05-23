@@ -2,8 +2,9 @@ from setuptools import setup
 
 
 def pre_install():
-    f = open("readme.md", "r")
-    text = f.read()
+    # f = open("readme.md", "r")
+    # text = f.read()
+    text = "face identification package"
     return text
 
 setup(
