@@ -17,7 +17,7 @@ face_bank
 │
 └───Harry
 │   │   Harry_1.jpg
-│   │   Harry_image_2.jpg
+│   │   Harry_2.jpg
 │   │   ...
 │   
 └───Zayn
