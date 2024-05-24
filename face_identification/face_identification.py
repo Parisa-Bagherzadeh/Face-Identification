@@ -59,7 +59,7 @@ class FaceIdentification():
              
         plt.imshow(result_image)  
         plt.axis("off")
-        plt.savefig('output/updated_output.png')  
+        plt.savefig('output/output.png')  
         plt.show()     
 
     
